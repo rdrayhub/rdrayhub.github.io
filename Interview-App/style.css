@@ -46,6 +46,9 @@ header {
 .stat-details h3 { margin: 0; font-size: 1.5rem; color: #1e3a8a; }
 .stat-details p { margin: 0; font-size: 0.85rem; color: #3b82f6; font-weight: bold; text-transform: uppercase; }
 
+/* --- Controls & Search --- */
+.controls { width: 100%; max-width: 600px; margin-bottom: 20px; }
+#search-bar { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 1rem; box-sizing: border-box; }
 
 /* --- Question Cards --- */
 #question-container {
