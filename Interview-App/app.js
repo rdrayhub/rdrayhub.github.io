@@ -1,6 +1,5 @@
 // --- DOM Elements ---
 const questionContainer = document.getElementById('question-container');
-const searchBar = document.getElementById('search-bar');
 
 const streakCountEl = document.getElementById('streak-count');
 const practicedCountEl = document.getElementById('practiced-count');
