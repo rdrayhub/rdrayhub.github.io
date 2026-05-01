@@ -1,5 +1,6 @@
 // --- DOM Elements ---
 const questionContainer = document.getElementById('question-container');
+const searchBar = document.getElementById('search-bar');
 
 const streakCountEl = document.getElementById('streak-count');
 const practicedCountEl = document.getElementById('practiced-count');
@@ -206,5 +207,14 @@ async function fetchQuestions() {
     }
 }
 
+// --- 6. Search Logic ---
+searchBar.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase();
+    const filtered = allQuestions.filter(q => 
+        q.question.toLowerCase().includes(term) || 
+        q.category.toLowerCase().includes(term)
+    );
+    displayQuestions(filtered);
+});
 
 fetchQuestions();
