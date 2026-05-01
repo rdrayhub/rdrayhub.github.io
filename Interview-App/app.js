@@ -206,14 +206,5 @@ async function fetchQuestions() {
     }
 }
 
-// --- 6. Search Logic ---
-searchBar.addEventListener('input', (e) => {
-    const term = e.target.value.toLowerCase();
-    const filtered = allQuestions.filter(q => 
-        q.question.toLowerCase().includes(term) || 
-        q.category.toLowerCase().includes(term)
-    );
-    displayQuestions(filtered);
-});
 
 fetchQuestions();
